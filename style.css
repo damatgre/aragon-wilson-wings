@@ -10,12 +10,17 @@
     --primary-color: rgb(18, 168, 209);
     --secondary-color: rgb(12, 110, 185);
     --tertiary-color: rgb(1, 227, 159);
-    --quanternary-color: rgb (240, 193, 104);
+    --quanternary-color: rgb(240, 193, 104);
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: var(--secondary-color);
+}
+
+h2 {
+    color: white;
+
 }
 
 /*apply style to header*/
@@ -39,7 +44,7 @@ header h1{
 }
 
 header a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 header nav {
@@ -73,7 +78,7 @@ header nav ul li a {
     display: flex;
 }
 
-.hero div h2 {
+.hero div p {
     font-size: small;
     display: flex;
     align-content: flex-end;   
@@ -85,13 +90,18 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 .work-title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     width: 30%;
-    border-right: 5px solid black;
+    border-right: 5px solid white;
+    font-size: 40px;
+    padding: 30px;
+    color:white;
 }
 
 .work-container {
@@ -99,11 +109,16 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
 }
 
+.work-container p{
+    color: white;
+    
+}
 
-/* work style starts here */
 .work-project img {
     height: 200px;
     width: 400px;
+    border-radius: 5px;
 }
