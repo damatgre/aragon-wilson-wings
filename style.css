@@ -7,13 +7,15 @@
 
 /*colors for page*/
 :root {
-    --primary-color: rgb(17, 142, 177);
-    --secondary-color: rgb(20, 221, 164);
-    --tertiary-color: rgb(199, 228, 241);
+    --primary-color: rgb(18, 168, 209);
+    --secondary-color: rgb(12, 110, 185);
+    --tertiary-color: rgb(1, 227, 159);
+    --quanternary-color: rgb (240, 193, 104);
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--secondary-color);
 }
 
 /*apply style to header*/
