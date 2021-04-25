@@ -12,27 +12,32 @@
     --tertiary-color: rgb(199, 228, 241);
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
 /*apply style to header*/
 header{
     padding: 20px 35px;
-    font-family: 'Tahoma';
-    background-color:rgb(21, 24, 89);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
+    background-image: url("../aragon-wilson-wings/assets/images/pexels-johannes-plenio-1103970.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 100%;
 }
 
 header h1{
     font-weight: bold;
     font-size: 36px;
-    color:var(--primary-color);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color:var(--tertiary-color);
 }
 
 header nav {
@@ -52,4 +57,23 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     
+}
+
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-image: url("../aragon-wilson-wings/assets/images/pexels-johannes-plenio-1103970.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 100%;
+    display: flex;
+}
+
+.hero div h2 {
+    font-size: small;
+    display: flex;
+    align-content: flex-end;   
 }
