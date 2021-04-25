@@ -60,10 +60,9 @@ header nav ul li a {
     font-size: 1.55vw;
     
 }
+/* header style ends */
 
-section {
-    padding: 60px;
-}
+/* hero style starts */
 
 .hero {
     background-image: url("../aragon-wilson-wings/assets/images/pexels-johannes-plenio-1103970.jpg");
@@ -78,4 +77,33 @@ section {
     font-size: small;
     display: flex;
     align-content: flex-end;   
+}
+/* hero style ends */
+
+/*main content style starts here */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-title {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    border-right: 5px solid black;
+}
+
+.work-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* work style starts here */
+.work-project img {
+    height: 200px;
+    width: 400px;
 }
