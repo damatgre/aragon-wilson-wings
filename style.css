@@ -30,11 +30,7 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-image: url("../aragon-wilson-wings/assets/images/pexels-johannes-plenio-1103970.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 100%;
+    background-color: var(--secondary-color);
 }
 
 header h1{
@@ -79,7 +75,6 @@ header nav ul li a {
 }
 
 .hero div p {
-    font-size: small;
     display: flex;
     align-content: flex-end;   
 }
@@ -91,6 +86,7 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    margin: 10px;
 }
 
 .work-title {
@@ -104,6 +100,35 @@ header nav ul li a {
     color:white;
 }
 
+.about-contain {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1 30%;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.about-content {
+    flex: 2 70%;
+    color: white;
+    
+}
+
+.about-content p {
+    font-size: 20px;
+}
+
 .work-container {
     width: 70%;
     display: flex;
@@ -112,13 +137,35 @@ header nav ul li a {
     padding: 20px;
 }
 
-.work-container p{
-    color: white;
-    
+.work-project {
+    background-image: url("./assets/images/pexels-johannes-plenio-1103970.jpg");
+    position: relative;
 }
 
-.work-project img {
-    height: 200px;
-    width: 400px;
-    border-radius: 5px;
+.work-project h3 p {
+    position: absolute;
+    text-decoration: none;
+    padding: 100px;
+}
+
+.contact-info {
+    width: 70;
+}
+
+.contact-info nav {
+    margin: 10px;
+}
+
+.contact-info nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-info nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
