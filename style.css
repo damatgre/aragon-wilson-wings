@@ -153,21 +153,20 @@ header nav ul li a {
 .work-container {
     width: 70%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     padding: 20px;
 }
 
-.work-project {
-    background-image: url("./assets/images/pexels-johannes-plenio-1103970.jpg");
-    position: relative;
-    background-size: auto;
+.work-project img{
+    position: absolute;
+    padding: 20px;
 }
 
 .work-project h3 {
-    position: absolute;
+    position: relative;
     bottom: 20px;
-    width: 100%;
+    width: 50%;
     padding: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -177,6 +176,7 @@ header nav ul li a {
     border-bottom: 0;
     font-family: "Georgia";
     font-size: 22px;
+    margin-left: 5px;
 }
 
 .contact-info {
