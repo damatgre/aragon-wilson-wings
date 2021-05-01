@@ -31,11 +31,12 @@ header{
     flex-wrap: wrap;
     top: 0;
     background-color: var(--secondary-color);
+    color: white;
 }
 
 header h1{
     font-weight: bold;
-    font-size: 36px;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -57,8 +58,13 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
+    margin: 10px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-decoration: none;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    color: white;
     
 }
 /* header style ends */
@@ -66,17 +72,27 @@ header nav ul li a {
 /* hero style starts */
 
 .hero {
-    background-image: url("../aragon-wilson-wings/assets/images/pexels-johannes-plenio-1103970.jpg");
+    background-image: url("./assets/images/pexels-steve-johnson-1509534.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-position: 100%;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 50px;
 }
 
 .hero div p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
     display: flex;
-    align-content: flex-end;   
+    justify-content: flex-end;
 }
 /* hero style ends */
 
@@ -95,9 +111,10 @@ header nav ul li a {
     justify-content: flex-end;
     width: 30%;
     border-right: 5px solid white;
-    font-size: 40px;
+    font-size: 30px;
     padding: 30px;
     color:white;
+    text-align: left;
 }
 
 .about-contain {
@@ -140,32 +157,54 @@ header nav ul li a {
 .work-project {
     background-image: url("./assets/images/pexels-johannes-plenio-1103970.jpg");
     position: relative;
+    background-size: auto;
 }
 
-.work-project h3 p {
+.work-project h3 {
     position: absolute;
-    text-decoration: none;
-    padding: 100px;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: var(--primary-color);
+    border-bottom: 0;
+    font-family: "Georgia";
+    font-size: 22px;
 }
 
 .contact-info {
-    width: 70;
+    width: 70%;
 }
 
 .contact-info nav {
-    margin: 10px;
+    margin: 20px;
 }
 
 .contact-info nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     list-style: none;
 }
 
 .contact-info nav ul li a {
-    padding: 10px 15px;
+    padding: 15px 25px;
     font-weight: lighter;
     font-size: 1.55vw;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info nav ul li p {
+    padding: 15px 25px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
 }
