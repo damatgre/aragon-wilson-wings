@@ -88,12 +88,16 @@ header nav ul li a {
     color: white;
     font-size: 20px;
     font-weight: bold;
+    background-color:rgb(12, 110, 185);
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .hero-subtitle {
     display: flex;
     justify-content: flex-end;
 }
+
 /* hero style ends */
 
 /*main content style starts here */
@@ -207,4 +211,9 @@ header nav ul li a {
     font-size: 50px;
     color: white;
     text-decoration: none;
+}
+
+/*pseudo classes start here*/
+header nav ul li a:hover {
+    background-color: var(--quanternary-color);
 }
