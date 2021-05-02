@@ -86,7 +86,7 @@ header nav ul li a {
 
 .hero div p {
     color: white;
-    font-size: 20px;
+    font-size: 1.55vw;
     font-weight: bold;
     background-color:rgb(12, 110, 185);
     border-radius: 20px;
@@ -105,6 +105,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch; 
     width: 100%;
     margin: 10px;
 }
@@ -115,7 +116,7 @@ header nav ul li a {
     justify-content: flex-end;
     width: 30%;
     border-right: 5px solid white;
-    font-size: 30px;
+    font-size: 2.55vw;
     padding: 30px;
     color:white;
     text-align: left;
@@ -147,38 +148,53 @@ header nav ul li a {
 }
 
 .about-content p {
-    font-size: 20px;
+    font-size: 1.55vw;
 }
 
 .work-container {
-    width: 70%;
+    flex: 0 0 70%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
     padding: 20px;
 }
 
-.work-project img{
-    position: absolute;
-    padding: 20px;
+.work-project {
+    background-image: url("./assets/images/pexels-dom-j-310452.jpg");
+    width: 45%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: medium;
+    border-color:rgb(240, 193, 104);
 }
 
 .work-project h3 {
-    position: relative;
     bottom: 20px;
     width: 50%;
-    padding: 15px;
-    font-weight: 300;
+    padding: 10px;
+    font-weight: 1.55vw;
     line-height: 30px;
     color: #fff;
-    text-align: center;
-    background: var(--primary-color);
-    border-bottom: 0;
-    font-family: "Georgia";
-    font-size: 22px;
-    margin-left: 5px;
+    text-decoration: none;
 }
 
+.work-project p {
+    bottom: 20px;
+    width: 50%;
+    padding: 10px;
+    font-weight: 1.55vw;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.work-project:first-child {
+    height: 300px;
+    width: 90%;
+}
 .contact-info {
     width: 70%;
 }
@@ -204,10 +220,12 @@ header nav ul li a {
     text-decoration: none;
     background-color: var(--tertiary-color);
     border-radius: 10px;
+    margin: 10px;
 }
 
 .contact-info nav ul li p {
     padding: 15px 25px;
+    margin: 10px;
     font-weight: lighter;
     font-size: 1.55vw;
     font-size: 50px;
@@ -228,4 +246,34 @@ header nav ul li a:hover {
 
 .contact-info nav ul li p:hover {
     background-color: var(--quanternary-color);
+}
+
+@media screen and (max-width: 768) {
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .work-title {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-right: none;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 5px solid white;
+    }
+    
+    .about-content {
+        width: 100%;
+
+    }
+
+    .work-container {
+        width: 100%;
+    }
 }
