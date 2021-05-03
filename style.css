@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /*colors for page*/
 :root {
     --primary-color: rgb(18, 168, 209);
@@ -162,6 +163,7 @@ header nav ul li a {
 
 .work-project {
     background-image: url("./assets/images/pexels-dom-j-310452.jpg");
+    opacity: 0.5;
     width: 45%;
     height: 200px;
     margin: 10px;
@@ -206,21 +208,21 @@ header nav ul li a {
 .contact-info nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
+    margin: 10px;
 }
 
 .contact-info nav ul li a {
-    padding: 15px 25px;
+    padding: 20px 20px;
+    margin: 10px;
     font-weight: lighter;
     font-size: 1.55vw;
-    font-size: 50px;
-    color: white;
     text-decoration: none;
     background-color: var(--tertiary-color);
     border-radius: 10px;
-    margin: 10px;
+    color: white;
 }
 
 
@@ -237,8 +239,16 @@ header nav ul li a:hover {
     background-color: var(--quanternary-color);
 }
 
-@media only screen and (max-width: 768) {
+.work-project:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
     
+    header {
+        justify-content: center;
+    }
+
     .main-container {
         display: flex;
         flex-wrap: wrap;
@@ -256,14 +266,29 @@ header nav ul li a:hover {
         margin: 0 auto;
         text-align: center;
         border-bottom: 5px solid white;
+        font-size: 2.4rem;
     }
     
-    .about-content {
-        width: 100%;
-
-    }
-
     .work-container {
         width: 100%;
+        justify-content: center;
+    }
+
+    .about-contain {
+        width: 100%;
+    }
+    .about-image {
+        justify-content: center;
+    }
+    .about-content {
+        text-align: center;
+    }
+    .about-content p{
+        font-size: 1.2rem;
+    }
+
+    .contact-info {
+        justify-content: space-between;
     }
 }
+
