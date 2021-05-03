@@ -18,4 +18,6 @@ This project was assigned by Rutgers Coding Bootcamp as a build your own portfol
 ![screenshot of bottom](./assets/images/bottom-screenshot.PNG)
 
 ## Resources Used
-remember to add pexels.com to tools
+https://www.pexels.com/search/background/
+https://www.w3schools.com/
+
