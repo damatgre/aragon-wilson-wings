@@ -14,8 +14,8 @@ This project was assigned by Rutgers Coding Bootcamp as a build your own portfol
 ## Screenshot
 
 
-![screenshot of top](./css/assets/images/top-screenshot.PNG)
-![screenshot of bottom](./css/assets/images/bottom-screenshot.PNG)
+![screenshot of top](./assets/images/top-screenshot.PNG)
+![screenshot of bottom](./assets/images/bottom-screenshot.PNG)
 
 ## Resources Used
 remember to add pexels.com to tools
