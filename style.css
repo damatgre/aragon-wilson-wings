@@ -119,7 +119,7 @@ header nav ul li a {
     border-right: 5px solid white;
     font-size: 2.55vw;
     padding: 30px;
-    color:white;
+    color:var(--quanternary-color);
     text-align: left;
 }
 
@@ -179,8 +179,11 @@ header nav ul li a {
     padding: 10px;
     font-weight: 1.55vw;
     line-height: 30px;
-    color: #fff;
+    color: var(--quanternary-color);
+    font-size: 2rem;
     text-decoration: none;
+
+
 }
 
 .work-project p {
@@ -189,13 +192,17 @@ header nav ul li a {
     padding: 10px;
     font-weight: 1.55vw;
     line-height: 30px;
-    color: #fff;
+    color: var(--secondary-color);
+    font-size: 1rem;
     text-decoration: none;
 }
 
 .work-project:first-child {
     height: 300px;
     width: 90%;
+    background-image: url('./assets/images/whats-for-dinner.jpg');
+    background-size: 100%;
+    background-repeat: initial;
 }
 .contact-info {
     width: 70%;
