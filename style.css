@@ -183,7 +183,6 @@ header nav ul li a {
     font-size: 2rem;
     text-decoration: none;
 
-
 }
 
 .work-project p {
@@ -283,6 +282,7 @@ header nav ul li a:hover {
 
     .about-contain {
         width: 100%;
+        margin: auto;
     }
     .about-image {
         justify-content: center;
