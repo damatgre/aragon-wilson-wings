@@ -203,6 +203,14 @@ header nav ul li a {
     background-size: 100%;
     background-repeat: initial;
 }
+
+#project2{
+    height: 100px;
+    width: 50%;
+    background-image: url('./assets/images/whats-for-dinner.jpg');
+    background-size: 100%;
+    background-repeat: initial;
+}
 .contact-info {
     width: 70%;
 }
